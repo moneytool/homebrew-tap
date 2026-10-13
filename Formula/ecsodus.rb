@@ -3,20 +3,20 @@ class Ecsodus < Formula
 
   desc "Migrate AWS Copilot CLI apps to Terraform-managed ECS"
   homepage "https://moneytool.github.io/ecsodus/"
-  url "https://files.pythonhosted.org/packages/77/f6/6252faa1b895b0b5c7d705ce83f08d2a18e9f8c2a49081e5eb1e458d1c8b/ecsodus-0.2.1.tar.gz"
-  sha256 "f25673082901673de20282b3f915637491940e6dfff3af937c2c3080f58c37c7"
+  url "https://files.pythonhosted.org/packages/f2/37/fd7e9a0ed99e2c136368633f4eae6db55ef8fcaa8538a9a964eaad3fe1f7/ecsodus-0.2.2.tar.gz"
+  sha256 "83a194cc334ff60800efaa2e564ff22825d2b0746a6092838c8378e8f13fecf6"
   license "Apache-2.0"
 
   depends_on "python@3.14"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/59/d3/fa092ae1c109100d0c5c14c69a316cd6d53c05fb57183fa77b1fcdef86ce/boto3-1.43.111.tar.gz"
-    sha256 "5ae342a16c848909cd42d4be404f69d9082e5705460198d4d3327eca5f6cddcb"
+    url "https://files.pythonhosted.org/packages/c8/83/bf66a8c094d11db78a6cc19d835460af7b470640df0d0a3a108e1f3cefcd/boto3-1.43.112.tar.gz"
+    sha256 "599548a8c8e93cf0223bcb35b615c82f29d30295e992b94863cfbb2405ee33e5"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/6c/43/257e97270ddd6833fd54b11e544a09b441b02f8c731bdeb29b90479be565/botocore-1.43.111.tar.gz"
-    sha256 "44d5e80962ac6cb9e85af72667b77c9586451e3328ab0ce33195380767e213d8"
+    url "https://files.pythonhosted.org/packages/0e/49/58187bfb510831e4cdafd7ced8e2a748097da81e8b9799d93f8d6ebf9f61/botocore-1.43.112.tar.gz"
+    sha256 "9ce0d70e09fabbb3a2e1126d3ec79ed67d14c88bb3f064e62ab2881d5eaf3c7b"
   end
 
   resource "jinja2" do
