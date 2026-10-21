@@ -3,20 +3,20 @@ class Ecsodus < Formula
 
   desc "Migrate AWS Copilot CLI apps to Terraform-managed ECS"
   homepage "https://moneytool.github.io/ecsodus/"
-  url "https://files.pythonhosted.org/packages/f2/37/fd7e9a0ed99e2c136368633f4eae6db55ef8fcaa8538a9a964eaad3fe1f7/ecsodus-0.2.2.tar.gz"
-  sha256 "83a194cc334ff60800efaa2e564ff22825d2b0746a6092838c8378e8f13fecf6"
+  url "https://files.pythonhosted.org/packages/e4/bf/aaa9f5362ec2f9573524f1a802a3aaa596b2d4c97fc244d828936851c00c/ecsodus-0.2.3.tar.gz"
+  sha256 "316add02b4a30067caaedbe9d350e2770063eabf0c407622ec1e11b72379e635"
   license "Apache-2.0"
 
   depends_on "python@3.14"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/c8/83/bf66a8c094d11db78a6cc19d835460af7b470640df0d0a3a108e1f3cefcd/boto3-1.43.112.tar.gz"
-    sha256 "599548a8c8e93cf0223bcb35b615c82f29d30295e992b94863cfbb2405ee33e5"
+    url "https://files.pythonhosted.org/packages/cc/20/de5848b0166d8cb6b6e597b299ca10a64ebba3cf9aaab228de1e817ae85e/boto3-1.43.116.tar.gz"
+    sha256 "89fa15e7d1788fb17cbd694b034beba57f43f30f58f4506913a5b62220f8ba01"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/0e/49/58187bfb510831e4cdafd7ced8e2a748097da81e8b9799d93f8d6ebf9f61/botocore-1.43.112.tar.gz"
-    sha256 "9ce0d70e09fabbb3a2e1126d3ec79ed67d14c88bb3f064e62ab2881d5eaf3c7b"
+    url "https://files.pythonhosted.org/packages/93/98/aff05e8a35f5bb9f6648c6056ecff02a2bd4540ad70a89215db8a0cae758/botocore-1.43.116.tar.gz"
+    sha256 "00b1fbfc1c024b56633538385628a1bbc7ab15aca0b5b53e5fe188841d96c8ce"
   end
 
   resource "jinja2" do
@@ -45,8 +45,8 @@ class Ecsodus < Formula
   end
 
   resource "s3transfer" do
-    url "https://files.pythonhosted.org/packages/76/43/35e4d8aa320bffe8287fe8f65f578fa2d2db0a64212f0e710dce58267854/s3transfer-0.19.2.tar.gz"
-    sha256 "ba0309fd86be3c27dbf78cdd813c13c5e1df16e5874b99d2535ebbdfb9892993"
+    url "https://files.pythonhosted.org/packages/49/c5/0a5ce655109cb96b8dfad36908a4e108d15f5dc2eff8fbc3146c4312e704/s3transfer-0.19.3.tar.gz"
+    sha256 "8326acc3d056d7f7b8a37110c7d2aea41f67e83f6ae79cd3b5fbcca34c726406"
   end
 
   resource "six" do
